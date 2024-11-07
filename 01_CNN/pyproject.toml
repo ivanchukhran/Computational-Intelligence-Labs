@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "01-cnn"
+version = "0.1.0"
+description = ""
+authors = ["Ivan Chukhran <ivan.chuhran@gmail.com>"]
+readme = "README.md"
+packages = [{include = "01_cnn"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.setuptools]
+packages = ["core", "dataset", "models", "utils"]
