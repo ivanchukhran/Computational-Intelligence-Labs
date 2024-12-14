@@ -36,7 +36,6 @@ PARAM_BOUNDS = [
 
 
 def bounded_gaussian_mutation(individual, mu, sigma, param_bounds, indpb):
-    """Custom mutation operator that respects parameter bounds"""
     for i in range(len(individual)):
         if random.random() < indpb:
             # Get bounds for this parameter
